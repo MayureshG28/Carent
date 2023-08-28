@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;800&display=swap');
+html{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #999999;
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar{
+    width: 0;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    background-color: rgb(82, 154, 236);
+    height: 80px;
+}
+nav .logo-name{
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    color: white;
+} 
+.logo-name img{
+    width: 50px; 
+    height: 50px;
+    border-radius: 50%;
+    background: none;
+    margin-right: 10px;
+}
+.logo-name h2{
+    font-size: 40px;
+    font-weight: 600;
+}
+nav .btn-box{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0px 0 auto;
+}
+
+.btn-box input, .btn-box i, .btn-box a{
+    background: none;
+    border: none;
+    font-size: 23px;
+    color: white;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.btn-box input:hover{
+    color: #ccc;
+}
+
+.wrapper{
+    background-color: white;
+    width: 400px;
+    border-radius: 30px;
+    box-shadow: 0 0 128px 0 rgba(0,0,0,1),
+    0 32px 64px -48px rgba(0,0,0,5);
+    margin-left: auto;
+    margin-right: 40%;
+    margin-top: 4%;
+}
+form{
+    padding: 20px 30px;
+}
+
+.wrapper .heading{
+    text-align: center;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+.error-text{
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    text-align: center;
+    display: none;
+}
+
+.wrapper h2{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.field.input{
+    display:flex;
+    flex-direction: column;
+}
+.field.input label, .field.file label{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px 0 5px 10px;
+}
+.field.input input{
+    border: none;
+    background-color: #ccc;
+    border-radius: 5px;
+    height: 40px;
+    font-size: 16px;
+    padding-left: 15px;
+    outline: none;
+    position: relative;
+    justify-content: center;
+}
+.field.input input::-webkit-input-placeholder{
+    color : rgb(83, 83, 83);
+}
+.field.file{
+    margin: 10px 0 0 0 ;
+}
+.field.file input{
+    height: 40px;
+    font-size: 18px;
+    margin: 5px 0 0 0;
+    border-bottom: 1px solid black;
+}
+.field.input i{
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 300px;
+    padding: 5px;
+    font-weight: 100;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.field.input i:hover{
+    background-color: rgb(161, 161, 161);
+}
+.field.button{
+    text-align: center;
+    margin: 30px 0 10px 0;
+} 
+.field.button button{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.avail-cars{
+    margin: 0 100px 0 100px;
+}
+.switch{
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.switch button{
+    width: 220px;
+    height: 45px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 600;
+    border: 2px solid  black;
+    background-color: #fff;
+    color: #333;
+    margin-right: 50px;
+    cursor: pointer;
+}
+.switch button:hover{
+    background-color: #333;
+    color: #fff;
+}
+
+.available-cars{
+    margin: 100px 0 50px 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 80px;
+}
+.all-cars{
+    margin: 100px 0 50px 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 80px;
+}
+.all-cars .card{
+    width: 650px;
+    height: 350px;
+    margin-left: 100px ;
+    color: #333;
+    background-color: rgb(238, 238, 238);
+    border-radius: 30px;
+    display: flex;
+}
+.available-cars .card{
+    width: 650px;
+    height: 350px;
+    margin-left: 100px ;
+    color: #333;
+    background-color: rgb(238, 238, 238);
+    border-radius: 30px;
+    display: flex;
+}
+.card img{
+    height: 350px;
+    border-radius: 30px 0 0 30px;
+    width: 300px;
+}
+.card .details {    
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card .details .info{
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.info i{
+    margin-left: 50px;
+}
+.info h1{
+    font-size: 35px;
+    margin:0 0 0 50px;
+    font-weight: 900;
+}
+.info h3{
+    font-size: 20px;
+    font-weight: 500;
+    margin:0 0 0 50px;
+}
+.info p{
+    margin:0 0 0 50px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.info a{
+    margin-left: 40px;
+    display: flex;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 120px;
+    color:white;
+    height: 40px;
+    background-color: rgb(236, 9, 9);
+    border-radius: 20px;
+    cursor: pointer;
+}
+.info #edit{
+    background-color: rgb(56, 192, 79);
+}
+.booked-cars{
+    margin-top: 30px;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: separate;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+th{
+    font-size: 20px;
+    text-align: center;
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+td{
+    text-align: center;
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.srno{
+    width: 30px;
+}
+.vmodel{
+    width: 350px;
+}
+.vnumber{
+    width: 350px;
+}
+.date{
+    width: 150px;
+}
+.noofdays{
+    width: 100px;
+}
+.name{
+    width: 250px;
+}

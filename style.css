@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;800&display=swap');
+html{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #999999;
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar{
+    width: 0;
+}
+nav{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 80px;
+    background-color:rgb(82, 154, 236);
+}
+nav .logo-name{
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    color: white;
+}
+nav .logo-name img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+nav .logo-name h2{
+    font-size: 40px;
+    font-weight: 600;
+}
+nav .btn-box{
+    height: 100%;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0px 0 auto;
+    background-color: blue;
+}
+.btn-box input{
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: white;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+.btn-box input:hover{
+    color: #ccc;
+}
+
+#fname{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.avail-cars{
+    margin: 0 100px 0 100px;
+}
+.available-cars{
+    margin: 100px 0 50px 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 80px;
+}
+.available-cars .card{
+    width: 650px;
+    height: 350px;
+    margin-left: 100px ;
+    color: #333;
+    background-color: rgb(238, 238, 238);
+    border-radius: 30px;
+    display: flex;
+}
+.card img{
+    height: 350px;
+    border-radius: 30px 0 0 30px;
+    width: 300px;
+}
+.card .details {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card .details .info {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.info i {
+    margin-left: 50px;
+}
+.info h1{
+    font-size: 35px;
+    margin:0 0 0 50px;
+    font-weight: 900;
+}
+.info h3{
+    font-size: 20px;
+    font-weight: 500;
+    margin:0 0 0 50px;
+}
+.info p{
+    margin:0 0 0 50px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.info a{
+    margin-left: 90px;
+    display: flex;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 150px;
+    color:black;
+    height: 40px;
+    background-color: rgb(255, 209, 5);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.selected-car{
+    margin-top: 10%;
+    margin-left: 25%;
+}
+.card-select{
+    display: flex;
+    width: 900px; 
+    height: 500px;
+    background-color: white;
+    border-radius: 30px;
+}
+.card-select img{
+    width: 400px;
+    height: 500px;
+    border-radius: 30px 0 0 30px;
+}
+.card-select .card-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 30px 30px 30px;
+}
+.card-info .info{
+    display: flex;
+    align-items: center;
+    margin: 10px 0 10px 60px;
+}
+
+.card-info .info i{
+    margin: 0 40px 0 10px; 
+}
+.card-info .info h1{
+    font-size: 35px;
+    margin:0 0 0 50px;
+    font-weight: 900;
+}
+.card-info .info h3{
+    font-size: 20px;
+    font-weight: 500;
+    margin:0 0 0 50px;
+}
+.card-info .info p{
+    margin:0 0 0 50px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.card-info .days{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0 10px 60px;
+}
+form .card-info .info.button{
+    display: flex;
+    justify-content: center;
+}
+form .card-info .error-text{
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    text-align: center;
+    display: none;
+}
+form .card-info .info button{
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 18px;
+    font-size: 17px;
+    margin: 10px 0 0 0;
+    background-color: rgb(255, 209, 5);
+    cursor: pointer;
+}
+
+.card-info .days input{
+    width: 200px;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 13px;
+    padding: 7px;
+    font-size: 15px;
+}
+.card-info .days h5{
+    padding: 0px;
+    margin: 0px;
+}
+
+.guest{
+    text-align: center;
+    margin: 0;
+    font-size: 19px;
+    font-weight: 500;
+    margin-top: 9%;
+    padding-bottom: 20px;
+}
+
+.wrapper{
+    background-color: white;
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 0 128px 0 rgba(0,0,0,1),
+    0 32px 64px -48px rgba(0,0,0,5);
+    margin-left: auto;
+    margin-right: 40%;
+}
+section{
+    padding: 20px 30px;
+}
+header{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+#heading{
+    font-size: 28px;
+    padding: 10px 0 10px 0;
+    margin: 0px;
+}
+.error-text{
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    text-align: center;
+    display: none;
+}
+
+form .personal-details{
+    display: flex;
+}
+.personal-details .field:first-child{
+    margin-right: 20px;
+}
+.personal-details .field:last-child{
+    margin-left: 20px;
+}
+
+form .field{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+form .field label{
+    margin-bottom: 2px;
+    margin-left: 5px;
+    font-size:16px;
+}
+form .field input{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    font-size: 15px;
+    padding-left: 10px;
+}
+form .input input:focus{
+    border: none;
+    outline: 1px solid red;
+}
+form .field.button{
+    margin-top: 20px ;
+    border-top: 1px solid black;
+}
+form .field.button input{
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    cursor:pointer;
+}
+section .field.button.agency{
+    margin: auto;
+    width: 60%;
+}
+section .field.button.agency input{
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    background-color: #ee6240;
+    color: #fff;
+    border-radius: 5px;
+    cursor:pointer; 
+}
+.link{
+    text-align:center;  
+    margin-top: 20px;  
+}
+.link a{
+    color: #333;
+}
+.link a:hover{
+    color: blue;
+}

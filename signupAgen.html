@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Customer SignUp Page</title>
+</head>
+<body style="background-image: url('admin/bg/bg1.jpg')">
+    <nav>
+        <div class="logo-name">
+            <img src="agency/images/logo.jpg" alt="Logo">
+            <h2>Carent</h2>
+        </div>
+        <div class="btn-box">
+            <a href="index.html"><input type="button" value="Login"> </a>
+        </div>
+    </nav>
+
+
+    <h4 class="guest">Use as a <a href="available_cars.php">Guest</a></h4>
+    <div class="wrapper">
+
+        <section class="form Signup Agency"  id="signupAgencyform">
+            <header> <h1 id="heading">SIGNUP AS A AGENCY</h1> </header>
+            
+            <form action="signup.php" method="post" autocomplete = "off">
+            <div class="error-text">This is an error message</div>
+            <div class="personal-details">
+                <div class="field input">
+                <label for="f-name">Agency Name</label>
+                <input type="text" name="fname" placeholder="Agency Name" id="f-name" />
+                </div>
+                <div class="field input">
+                <label for="l-name">Agent Name</label>
+                <input type="text" name="lname" placeholder="Agent Name" id="l-name" />
+                </div>
+            </div>
+            <div class="field input">
+                <label for="email">Email Address</label>
+                <input
+                type="text"
+                name="email"
+                placeholder="Enter your email address"
+                />
+            </div>
+            <div class="field input">
+                <label for="password">Password</label>
+                <input
+                type="password"
+                name="password"
+                placeholder="Enter your new password"
+                />
+            </div>
+            <div class="field button">
+                <input type="submit" id="signupagency" name="signup" value="SignUp" />
+            </div>
+            </form>
+
+            <div class="field button agency">
+                <a href="signupCust.html">
+                    <input id="signupascustomer" type="submit" name="signup" value="SignUp As A Customer" />
+                </a>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="js/signupAgen.js"></script>
+</body>
+</html>
